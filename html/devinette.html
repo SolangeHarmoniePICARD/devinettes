@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" dir="ltr">
 
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Jeu de devinette</title>
-</head>
+    <title>Devine !</title>
+    <meta name="author" lang="fr" content="Solange Harmonie PICARD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="../conversation.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
 
-<body>
+  <body>
+    <div class="container min-vh-100 d-flex flex-column align-content-center">
+     <div class="row flex-grow-1 d-flex justify-content-center align-items-center">
+       <div class="col-12 col-md-4">
+         <div class="card center-block">
+           <div class="card-header">
+             <h3 class="text-center text-primary font-weight-bold">Devine !</h3>
+           </div>
+           <div class="card-body">
+              <p class="card-text text-justify">
+                J'ai généré un nombre aléatoire compris entre 1 et 100. Tu as droit à 6 tentatives pour le deviner.
+              </p>
+             <div class="form-group">
+              <form class="mb-3">
+                <input class="form-control mb-2" type="text" id="answer"  placeholder="Propose ta réponse.">
+                <input id="button" type="button" class="btn btn-outline-primary btn-lg btn-block" value="Soumettre">
+              </form>
+              <p id="result" class="text-center"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="../js/devinette.js"></script>
-</body>
-
+  </body>
 </html>
